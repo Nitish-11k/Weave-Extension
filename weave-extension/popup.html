@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weave</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-wrapper">
+    <div class="glass-orb-container">
+      
+      <!-- Header -->
+      <div class="header-pill">
+        <div class="logo-circle"></div>
+        <h1>Weave</h1>
+      </div>
+
+      <!-- Mode Toggle -->
+      <div class="mode-toggle-pill">
+        <label>
+          <input type="radio" name="mode" value="context" checked>
+          <span class="mode-btn">Context</span>
+        </label>
+        <label>
+          <input type="radio" name="mode" value="report">
+          <span class="mode-btn">Report</span>
+        </label>
+      </div>
+
+      <!-- Tab List -->
+      <div class="tabs-list" id="tabs-container">
+        <!-- Injected via popup.js -->
+      </div>
+
+      <!-- Controls -->
+      <div class="controls-container">
+        <select id="destination-select" class="dropdown-pill">
+          <option value="chatgpt">ChatGPT</option>
+          <option value="claude">Claude</option>
+          <option value="gemini">Gemini</option>
+        </select>
+        
+        <div class="action-wrapper">
+          <button id="send-btn" class="action-btn-pill">
+            Send to AI
+          </button>
+          <div id="status-badge" class="status-badge-circle hidden">✓</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
