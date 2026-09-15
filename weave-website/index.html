@@ -9,6 +9,10 @@
 </head>
 <body>
   
+  <!-- Futuristic Background -->
+  <canvas id="bg-canvas"></canvas>
+  <div class="grid-overlay"></div>
+  
   <div class="ambient-glow glow-1"></div>
   <div class="ambient-glow glow-2"></div>
 
@@ -30,14 +34,28 @@
         <a href="#features" class="btn-pill-large secondary">See how it works</a>
       </div>
 
-      <div class="hero-visual gs-reveal">
-        <div class="orbit-center glass">
-          <div class="logo-circle large"></div>
+      <div class="hero-visual-responsive gs-reveal">
+        <!-- Animated Inputs (Left) -->
+        <div class="flow-node flow-input in-1 glass">📝 Research</div>
+        <div class="flow-node flow-input in-2 glass">🌐 Docs</div>
+        <div class="flow-node flow-input in-3 glass">📊 Data</div>
+
+        <!-- Decision / Processing Core -->
+        <div class="flow-node node-core glass">
+          <span class="ai-text">Weave</span>
         </div>
-        <div class="orbit-ring"></div>
-        <div class="orbit-node node-1 glass"></div>
-        <div class="orbit-node node-2 glass"></div>
-        <div class="orbit-node node-3 glass"></div>
+        <div class="done-by-weave">⚡ Done by Weave</div>
+        
+        <!-- Animated Outputs -->
+        <div class="flow-node flow-out out-1 glass">
+          <div class="ai-brand-dot chatgpt"></div> ChatGPT
+        </div>
+        <div class="flow-node flow-out out-2 glass">
+          <div class="ai-brand-dot claude"></div> Claude
+        </div>
+        <div class="flow-node flow-out out-3 glass">
+          <div class="ai-brand-dot gemini"></div> Gemini
+        </div>
       </div>
     </section>
 
@@ -58,6 +76,42 @@
         <p>Seamlessly integrated with ChatGPT, Claude, and Gemini. Choose your copilot on the fly.</p>
       </div>
     </section>
+
+    <section id="how-it-works" class="how-it-works">
+      <h2 class="section-title gs-reveal">How It <span class="text-accent">Works</span></h2>
+      <p class="section-subtitle gs-reveal">Three simple steps to transform your research workflow.</p>
+      
+      <div class="timeline">
+        <div class="timeline-step gs-reveal">
+          <div class="step-circle glass">1</div>
+          <div class="step-content glass">
+            <h3>Research Naturally</h3>
+            <p>Open all the tabs you need for your project. Stack Overflow, Docs, GitHub—keep them all open.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-connector gs-reveal"></div>
+        
+        <div class="timeline-step gs-reveal">
+          <div class="step-circle glass">2</div>
+          <div class="step-content glass">
+            <h3>Activate Weave</h3>
+            <p>Click the Weave icon. Select the tabs you want, and choose your favorite AI Copilot.</p>
+          </div>
+        </div>
+
+        <div class="timeline-connector gs-reveal"></div>
+        
+        <div class="timeline-step gs-reveal">
+          <div class="step-circle glass">3</div>
+          <div class="step-content glass">
+            <h3>Magic Injection</h3>
+            <p>Weave instantly opens your AI and injects your tabs as perfectly formatted context. Start prompting immediately.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer class="footer-pill glass gs-reveal">
